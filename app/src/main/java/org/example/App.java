@@ -3,11 +3,12 @@
  */
 package org.example;
 
+import java.util.ArrayList;
+
 public class App {
   public static void main(String[] args) {
-    String saludo = "Hola mundo";
-    System.out.println(saludo);
-    saludo = "Adios mundo";
-    System.out.println(saludo);
+    int initialNumber = 2;
+    int initialIndex = 0;
+    ArrayList<String> evenNumbersList = new ArrayList<>();
   }
 }
