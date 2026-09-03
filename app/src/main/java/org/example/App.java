@@ -8,7 +8,20 @@ import java.util.ArrayList;
 public class App {
   public static void main(String[] args) {
     int initialNumber = 2;
-    int initialIndex = 0;
-    ArrayList<String> evenNumbersList = new ArrayList<>();
+    int currentIndex = 0;
+    ArrayList<Integer> evenNumbersList = new ArrayList<Integer>();
+    evenNumbersList.add(initialNumber);
+    System.out.println(evenNumbersList.get(0));
+
+    for (int i = 1; i <= 10; i++) {
+      evenNumbersList.add(duplicateNumber(evenNumbersList.get(currentIndex)));
+      currentIndex++;
+      System.out.println(evenNumbersList.get(currentIndex));
+    }
+
+  }
+
+  public static Integer duplicateNumber(int number) {
+    return number * 2;
   }
 }
