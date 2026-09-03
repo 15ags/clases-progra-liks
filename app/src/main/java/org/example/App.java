@@ -3,22 +3,11 @@
  */
 package org.example;
 
-import java.util.ArrayList;
-
 public class App {
   public static void main(String[] args) {
-    int currentIndex = 0;
-    int initialNumber = 1;
-    ArrayList<Integer> numberList = new ArrayList<Integer>();
-    numberList.add(initialNumber);
-    for (int i = 0; i < 10; i++) {
-      numberList.add(Duplicate(numberList.get(currentIndex)));
-      currentIndex++;
-    }
-    System.out.println(numberList);
-  }
-
-  public static int Duplicate(int numb) {
-    return numb * 2;
+    String saludo = "Hola mundo";
+    System.out.println(saludo);
+    saludo = "Adios mundo";
+    System.out.println(saludo);
   }
 }
