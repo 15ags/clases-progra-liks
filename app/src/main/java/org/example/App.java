@@ -3,11 +3,21 @@
  */
 package org.example;
 
+import java.util.ArrayList;
+
 public class App {
   public static void main(String[] args) {
-    String saludo = "Hola mundo";
-    System.out.println(saludo);
-    saludo = "Adios mundo";
-    System.out.println(saludo);
+    ArrayList<Integer> listaDePares = new ArrayList<Integer>();
+    int numeroInicial = 2;
+    int indexInicial = 0;
+    listaDePares.add(numeroInicial);
+    System.out.println(listaDePares.get(indexInicial));
+
+    for (int i = 1; i <= 10; i++) {
+    }
+  }
+
+  public static int duplicar(int numero) {
+    return numero * 2;
   }
 }
