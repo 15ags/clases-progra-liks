@@ -15,8 +15,7 @@ public class App {
 
     for (int i = 1; i <= 10; i++) {
       listaDePares.add(duplicar(listaDePares.get(currentIndex)));
-      currentIndex = currentIndex++;
-      System.out.println("Curremt index = " + currentIndex);
+      currentIndex++;
       System.out.println(listaDePares.get(currentIndex));
     }
   }
